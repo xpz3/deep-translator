@@ -19,6 +19,7 @@ class GoogleTranslatorWeb:
         :param headless: Run Chrome in headless mode.
         """
         self.headless = headless
+        self.driver_wait = driver_wait
         options = uc.ChromeOptions()
         if self.headless:
             options.headless = True
